@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency conversion</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>currency conversion</h1>
+    </header>
+    <main>
+        <label for="moneda" class="topTitulo">Escoge una moneda</label>
+        <div class="elegirMoneda">
+            <input list="monedas" id="moneda1" name="moneda" placeholder="Escribe o selecciona...">
+            <input list="monedas" id="moneda2" name="moneda" placeholder="Escribe o selecciona...">
+
+            <datalist id="monedas">
+                <option value="USD">
+                <option value="EUR">
+                <option value="GBP">
+                <option value="MAD">
+                <option value="JPY">
+            </datalist>
+        </div>
+        <article>
+            <input type="text" id="cantidad1" >
+            <input type="text" id="cantidad2" disabled>
+        </article>
+        <input type="submit" id="cambiarBtn" value="cambiar">
+        <strong id="error"></strong>
+    </main>
+    <footer>
+        <h2>Designed by AMR</h2>
+        <p>&copy; <span id="year"></span> currency conversion. All rights reserved.</p>
+    </footer>
+    <script src="./js/Currency.js"></script>
+</body>
+</html>
