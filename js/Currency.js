@@ -42,6 +42,10 @@ let anyo = document.getElementById("year").textContent = new Date().getFullYear(
                 throw new Error("fetch incorrecto");
             }
 
+            if(error.textContent){
+                error.style.display = "none"
+            }
+
             const data = await response.json();
             const moneda  = data.rates[moneda2];
             const res = moneda.toFixed(2) * valor1;
