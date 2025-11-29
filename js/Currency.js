@@ -43,6 +43,7 @@ let anyo = document.getElementById("year").textContent = new Date().getFullYear(
             }
 
             if(error.textContent){
+                error.textContent = "";
                 error.style.display = "none"
             }
 
